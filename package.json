@@ -1,18 +1,14 @@
 {
-  "name": "ButtonFactory",
+  "name": "ui5-button-factory",
   "version": "0.0.1",
-  "description": "",
+  "description": "UI5 Button Factory",
+  "main": "Component.js",
   "devDependencies": {
-    "@ui5/cli": "1.13.0",
-    "@sap/ui5-builder-webide-extension": "1.0.x"
+    "lite-server": "^2.5.4"
   },
   "scripts": {
-    "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
+    "start": "live-server"
   },
-  "ui5": {
-    "dependencies": [
-      "@sap/ui5-builder-webide-extension"
-    ]
-  },
-  "private": "true"
+  "author": "Arthur Silva",
+  "license": "ISC"
 }
