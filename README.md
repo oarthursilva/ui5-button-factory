@@ -1,6 +1,12 @@
 # ui5-button-factory
 UI5 Button Factory
 
+## Motivation
+
+- reduce the complexity and workload of controllers. eg.: `onPress` is suitable for every button  
+- reusability of components
+- use of oriented-object and design pattern 
+
 ## Before start
 
 - Make sure NodeJS is installed by running `node -v` in your terminal
