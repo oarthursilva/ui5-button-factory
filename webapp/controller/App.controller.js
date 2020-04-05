@@ -5,7 +5,7 @@ sap.ui.define([
 
 	return Controller.extend("com.br.ButtonFactory.controller.App", {
 		onInit: function () {
-
+				
 		}
 		
 	});

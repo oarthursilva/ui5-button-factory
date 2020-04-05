@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "UI5 Button Factory",
   "main": "Component.js",
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  },
   "scripts": {
-    "start": "live-server"
+    "start": "lite-server"
   },
   "author": "Arthur Silva",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
