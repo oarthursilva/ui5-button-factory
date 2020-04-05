@@ -1,11 +1,10 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"sap/ui/Device",
-	"com/br/ButtonFactory/model/models"
+	"sap/ui/Device"
 ], function (UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("com.br.ButtonFactory.Component", {
+	return UIComponent.extend("br.com.ButtonFactory.Component", {
 
 		metadata: {
 			manifest: "json"
@@ -17,14 +16,12 @@ sap.ui.define([
 		 * @override
 		 */
 		init: function () {
+			
 			// call the base component's init function
 			UIComponent.prototype.init.apply(this, arguments);
 
 			// enable routing
 			this.getRouter().initialize();
-
-			// set the device model
-			this.setModel(models.createDeviceModel(), "device");
 		}
 	});
 });
