@@ -3,7 +3,11 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("com.br.ButtonFactory.controller.App", {
+	return Controller.extend("br.com.ButtonFactory.controller.App", {
+
+		/**
+		 * Called when the application is started.
+		 */
 		onInit: function () {
 				
 		}

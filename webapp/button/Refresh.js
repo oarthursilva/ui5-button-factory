@@ -1,16 +1,35 @@
 sap.ui.define([
-    "com/br/ButtonFactory/button/Button"
+    "br/com/ButtonFactory/button/Button"
 ], function (Button) {
 	"use strict";
 
-	var Refresh = Button.extend("com.br.ButtonFactory.button.Refresh", {
+	/**
+	 * Creates a new Button Refresh.
+	 *
+	 *
+	 * @alias br.com.ButtonFactory.button.Button
+	 * @class
+	 * @classdesc
+	 *   Instances of this class are fired when the refresh button is requested.
+	 *
+	 * @public
+	 */
+	let Refresh = Button.extend("br.com.ButtonFactory.button.Refresh", {
 
 		/**
 		 * constructor
 		 * @public
 		 */
 		constructor: function () {
-		}		
+		},
+
+		// /**
+		// /* execute
+		//  * @override
+		//  */
+		// execute: function () {
+		// 	console.info("processing execute");
+		// } 
 	});
 
 	return Refresh;

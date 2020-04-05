@@ -1,23 +1,23 @@
-sap.ui.define(["sap/ui/base/Exception"],
-    function (Exception) {
+sap.ui.define([
+	"sap/ui/base/Exception"
+], function (Exception) {
     "use strict";
 
 	/**
 	 * Creates a new ApplicationException.
 	 *
 	 * @param {string} message
-	 *   A message explaining why the parsing of a value failed; this message is language dependent
+	 *   A message explaining why the application processing failed; this message is language dependent
 	 *   as it may be displayed on the UI
 	 *
-	 * @alias com.br.ButtonFactory.exception.ApplicationException
+	 * @alias br.com.ButtonFactory.exception.ApplicationException
 	 * @class
 	 * @classdesc
-	 *   Instances of this exception are thrown when converting a string value to its model
-	 *   representation fails.
+	 *   Instances of this exception are thrown when the application fails.
 	 *
 	 * @public
 	 */
-	var ApplicationException = function (message) {
+	let ApplicationException = function (message) {
 		this.name = "ApplicationException";
 		this.message = message;
 	};
@@ -27,4 +27,5 @@ sap.ui.define(["sap/ui/base/Exception"],
     ApplicationException.prototype.constructor = ApplicationException;
 
 	return ApplicationException;
+	
 }, /* bExport= */ true);

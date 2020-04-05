@@ -1,24 +1,28 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"com/br/ButtonFactory/factory/ButtonFactory"
+	"br/com/ButtonFactory/factory/ButtonFactory"
 ], function (Controller, ButtonFactory) {
 	"use strict";
 
-	return Controller.extend("com.br.ButtonFactory.controller.Main", {
+	return Controller.extend("br.com.ButtonFactory.controller.Main", {
 
+		/**
+		 * constructor
+		 * @public
+		 */
 		constructor: function () {
-			this.ButtonFactory = new com.br.ButtonFactory.factory.ButtonFactory();
+			this.ButtonFactory = new br.com.ButtonFactory.factory.ButtonFactory();
 		},
 
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.
-		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 		 * @memberOf com.br.ButtonFactory.view.Main
 		 */
 		onInit: function () {
 		},
 
 		/**
+		 * Fired when button are pressed
 		 * @param {sap.ui.base.Event} oEvent
 		 * @memberOf com.br.ButtonFactory.view.Main
 		 */

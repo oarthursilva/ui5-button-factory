@@ -1,19 +1,30 @@
 sap.ui.define([
     "sap/ui/base/Object",
-    "com/br/ButtonFactory/button/Button",
-    "com/br/ButtonFactory/exception/ApplicationException",
-    "com/br/ButtonFactory/button/Refresh",
-    "com/br/ButtonFactory/button/Create",
-    "com/br/ButtonFactory/button/Download"
+    "br/com/ButtonFactory/button/Button",
+    "br/com/ButtonFactory/exception/ApplicationException",
+    "br/com/ButtonFactory/button/Refresh",
+    "br/com/ButtonFactory/button/Create",
+    "br/com/ButtonFactory/button/Download"
 ], function (Object, Button, ApplicationException) {
 	"use strict";
 
-    let eventId = { 
+    const eventId = { 
         REFRESH: "refresh",
         CREATE: "create",
         DOWNLOAD: "download"
     };
 
+	/**
+	 * Creates a new Button Factory.
+	 *
+	 *
+	 * @alias br.com.ButtonFactory.button.Button
+	 * @class
+	 * @classdesc
+	 *   Instances of this class create button handlers.
+	 *
+	 * @public
+	 */
 	let ButtonFactory = Object.extend("com.br.ButtonFactory.factory.ButtonFactory", {
 
 		/**
@@ -24,24 +35,24 @@ sap.ui.define([
         },
 
         /**
-         * 
+         * factory
          * @public
          */
         factory: function (sName) {
             console.info("creating handler for button \"%s\" using factory", sName);
 
             if (sName === eventId.REFRESH) {
-                return new com.br.ButtonFactory.button.Refresh();
+                return new br.com.ButtonFactory.button.Refresh();
 
             } else if (sName === eventId.CREATE) { 
-                return new com.br.ButtonFactory.button.Create();
+                return new br.com.ButtonFactory.button.Create();
             
             } else if (sName === eventId.DOWNLOAD) { 
-                return new com.br.ButtonFactory.button.Download();
+                return new br.com.ButtonFactory.button.Download();
             
             } else {
                 console.error("No handler for \"%s\"", sName);
-                throw new com.br.ButtonFactory.exception.ApplicationException("No event handler available for the button");
+                throw new com.br.ButtonFactory.exception.ApplicationException("No event handler found");
             }
         }
 	});

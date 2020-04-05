@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "com.br.ButtonFactory",
+		"id": "br.com.ButtonFactory",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -33,7 +33,7 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "com.br.ButtonFactory.view.App",
+			"viewName": "br.com.ButtonFactory.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "App"
@@ -54,7 +54,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "com.br.ButtonFactory.i18n.i18n"
+					"bundleName": "br.com.ButtonFactory.i18n.i18n"
 				}
 			}
 		},
@@ -68,7 +68,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "com.br.ButtonFactory.view",
+				"viewPath": "br.com.ButtonFactory.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false,
